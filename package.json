@@ -1,0 +1,20 @@
+{
+  "name": "tokamak-server",
+  "version": "1.0.0",
+  "description": "modern nodejs SPA web server",
+  "main": "build/index.js",
+  "author": "jason tibbetts",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "start": "node build/index",
+    "restart": "yarn build && yarn start"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3",
+    "@types/node": "16",
+    "@tsconfig/node16": "^1.0.3"
+  }
+}
