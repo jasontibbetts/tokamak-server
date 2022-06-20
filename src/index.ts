@@ -11,6 +11,7 @@ export async function main() {
       port: 443,
     },
     async (req: Http2ServerRequest) => {
+      console.log(new URL(req.url, `${req.scheme}:${req.authority}`));
       return {
         status: 200,
         body: `<!doctype html><html>
